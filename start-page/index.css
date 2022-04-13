@@ -19,14 +19,30 @@ body {
 
 .flexbox {
 	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flexbox-colors {
+	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
 }
 
 .mainbox {
 	background-color: var(--bg);
-	border-radius: 15px;
+	/*border-radius: 15px;*/
 	padding: 12px;
+        height: 80%;
+        width: 55%;
+}
+
+.imagebox {
+	background-color: var(--bg);
+	padding: 10px;
+        object-fit: cover;
+        height: 80%;
+        width: 15%;
 }
 
 .alpha {
@@ -49,12 +65,21 @@ body {
 	color: var(--hl);
 }
 
+/* Information */
 
+.information {
+  padding-left: 10px;
+}
+
+.links {
+  padding-left: 70px;
+}
 
 /*   Clock + Date   */
 
 #clock {
-	text-align: center;
+        text-align: center;
+        font-size: 50px;
 }
 
 #clock, #cal {
@@ -62,12 +87,15 @@ body {
 	margin-left: 1rem;
 }
 
-
+#cal {
+  font-size: 35px;
+}
 
 /*   Quicklinks   */
 
 b {
 	color: var(--title);
+        font-size: 25px;
 }
 
 li {
@@ -78,6 +106,7 @@ li {
 a {
 	all: unset;
 	color: var(--fg);
+        font-size: 25px;
 }
 
 a:hover {
@@ -91,14 +120,15 @@ a:hover {
 /*   Searchbar   */
 
 .search {
-	margin-top: 12px;
+	margin-top: 28px;
+	margin-bottom: 30px;
 }
 
 .search input {
 	background-color: var(--fg);
-	padding: 4px 0.5rem 4px 0.75rem;
+	padding: 4px 0.5rem 6px 0.75rem;
 	height: 1.5rem;
-	width: 80%;
+	width: 85%;
 	border-radius: 2rem;
 	margin-bottom: 16px;
 	margin-left: 26px;
@@ -117,10 +147,12 @@ a:hover {
 
 /*   Decoration   */
 
-.cat {
-	margin-left: 5rem;
+.image {
+	margin-left: 1rem;
+	margin-bottom: 1rem;
 	font-size: 24px;
 	text-align: center;
+        border: 3px solid var(--title)
 }
 
 .colcir {
